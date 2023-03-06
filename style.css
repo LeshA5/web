@@ -1,0 +1,304 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ */
+
+
+.top-menu__logo {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.top-menu__link {
+    font-family: 'Oxygen', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background-color: #F7F7F7;
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-family: 'Oxygen', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.header__title {
+    color: #FFFFFF;
+}
+
+.header__subtitle {
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.header__button {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #DD783F;
+    border-radius: 3px;
+    color: #FFFFFF;
+    height: 44px;
+    width: 167px;
+}
+
+.bottom-menu__link {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768088;
+}
+
+.header__bottom-menu {
+    background: #FFFFFF;
+}
+
+.header {
+    background-image: url('assets/canyon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header_without-background {
+    background: none;
+}
+
+.top-menu__logo_without-background {
+    color: #2E2E2E;
+}
+
+.top-menu__link_without-background {
+    color: #2E2E2E;
+}
+
+.header__top-menu {
+    height: 74px;
+}
+
+.header__content {
+    height: 426px;
+}
+
+.featured-posts__title {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2E2E2E;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.featured-posts__item_first {
+    background-image: url('assets/radiance.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.featured-posts__item_second {
+    background-image: url('assets/chinese-lantern.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.featured-posts__name {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.featured-posts__about {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__author-name {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__author-logo {
+    top: 5px;
+    height: 26px;
+}
+
+.featured-posts__date {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.most-recent__title {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #2E2E2E;
+}
+
+.most-recent__item {
+    background-color: #FFFFFF;
+}
+
+.most-recent__name {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.most-recent__about {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+.most-recent__post-data {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.most-recent__post-info {
+    background-color: #FCFCFC;
+}
+
+.most-recent__author-name {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.most-recent__author-logo {
+    height: 26px;
+    width: 26px;
+}
+
+.most-recent__image {
+    height: 150px;
+    width: 297px;
+}
+
+.footer__logo {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer__link {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    background: rgba(35, 47, 56, 0.6);
+}
+
+.article__title {
+    color: #2E2E2E;
+}
+
+.article__subtitle {
+    color: #2E2E2E;
+}
+
+.article__text {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #101315;
+}
+
+.article__image{
+    height: 534px;
+    width: 100%;
+}
