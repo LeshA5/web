@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +15,13 @@
     <div class="wrapper">
         <header class="header header_without-background">
             <div class="header__top-menu top-menu">
-                <a href="" class="top-menu__logo top-menu__logo_without-background">Escape.</a>
+                <a href="" class="top-menu__logo top-menu__logo_gray">Escape.</a>
                 <nav class="top-menu__menu">
                     <ul class="top-menu__list">
-                        <li><a href="" class="top-menu__link top-menu__link_without-background">Home</a></li>
-                        <li><a href="" class="top-menu__link top-menu__link_without-background">Categories</a></li>
-                        <li><a href="" class="top-menu__link top-menu__link_without-background">About</a></li>
-                        <li><a href="" class="top-menu__link top-menu__link_without-background">Contact</a></li>
+                        <li><a href="" class="top-menu__link top-menu__link_gray">Home</a></li>
+                        <li><a href="" class="top-menu__link top-menu__link_gray">Categories</a></li>
+                        <li><a href="" class="top-menu__link top-menu__link_gray">About</a></li>
+                        <li><a href="" class="top-menu__link top-menu__link_gray">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -71,15 +73,26 @@
             </article>
         </main>
         <footer class="footer">
-            <a href="" class="footer__logo">Escape.</a>
-            <nav class="footer__menu">
-                <ul class="footer__list">
-                    <li><a href="" class="footer__link">Home</a></li>
-                    <li><a href="" class="footer__link">Categories</a></li>
-                    <li><a href="" class="footer__link">About</a></li>
-                    <li><a href="" class="footer__link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="footer__body">
+                <div class="footer__title">
+                    Stay in Touch
+                </div>
+                <form class="footer__form">
+                    <input placeholder="Enter your email address" class="footer__input">
+                    <button class="footer__button">Submit</button>
+                </form>
+            </div>
+            <div class="footer__menu-container">
+                <nav class="footer__menu">
+                    <a href="" class="footer__logo">Escape.</a>
+                    <ul class="footer__list">
+                        <li><a href="" class="footer__link">Home</a></li>
+                        <li><a href="" class="footer__link">Categories</a></li>
+                        <li><a href="" class="footer__link">About</a></li>
+                        <li><a href="" class="footer__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
     </div>
 </body>
