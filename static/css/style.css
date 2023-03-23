@@ -29,26 +29,18 @@ a {
 }
 
 .title {
-    font-family: 'Lora', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 51px;
     text-align: center;
     letter-spacing: 2px;
+    font: 50px/51px 'Oxygen', serif;
 }
 
 .subtitle {
-    font-family: 'Oxygen', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
     text-align: center;
+    font: 17px/20px 'Oxygen', serif;
 }
 
 .header {
-    background-image: url('assets/canyon.jpg');
+    background-image: url('/web/Static/assets/canyon.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -68,11 +60,7 @@ a {
 }
 
 .header__button {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font: 13px/20px 'Oxygen', serif;
     text-align: center;
     background-color: #DD783F;
     border-radius: 3px;
@@ -84,11 +72,7 @@ a {
 }
 
 .bottom-menu__link {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font: 14px/20px 'Lora', serif;
     color: #768088;
 }
 
@@ -116,10 +100,7 @@ a {
 
 .top-menu__logo {
     text-decoration: none;
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 26px;
+    font: 26px/26px 'Lora', serif;
     color: #FFFFFF;
 }
 
@@ -128,14 +109,15 @@ a {
 }
 
 .top-menu__link {
-    font-family: 'Oxygen', serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    font: 12px/20px 'Oxygen', serif;
     color: #FFFFFF;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    padding: 0 20px 0 0;
+    padding: 0 40px 0 0;
+}
+
+.top-menu__list li:last-child a {
+    padding: 0 0 0 0;
 }
 
 .top-menu__logo_gray {
@@ -156,19 +138,20 @@ a {
 }
 
 .featured-posts__title {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font: 20px/27px 'Oxygen', serif;
     color: #2E2E2E;
     text-align: center;
     letter-spacing: 2px;
-    padding: 60px 0 40px 0;
+    padding: 60px 0 17px 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #DEDEDE;
+    width: 188px;
+    margin: 0 auto;
 }
 
 .featured-posts__item_first {
-    background-image: url('assets/radiance.png');
+    background-image: url('/web/Static/assets/radiance.png');
     background-repeat: no-repeat;
     background-size: 100%;
     justify-content: flex-end;
@@ -180,10 +163,11 @@ a {
     padding: 0 0 22px 0;
     align-self: center;
     align-items: center;
+    justify-content: space-between;
 }
 
 .featured-posts__item_second {
-    background-image: url('assets/chinese-lantern.png');
+    background-image: url('/web/Static/assets/chinese-lantern.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -195,17 +179,18 @@ a {
     flex-direction: column;
 }
 
+.featured-posts__author {
+    display: flex;
+    align-items: center;
+}
 .featured-posts__items {
     display: flex;
     justify-content: space-between;
+    padding: 23px 0 0 0;
 }
 
 .feature-posts__button {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
+    font: 12px/13px 'Oxygen', serif;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #DD783F;
@@ -220,22 +205,14 @@ a {
 }
 
 .featured-posts__name {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 30px;
+    font: 27px/30px 'Lora', serif;
     color: #FFFFFF;
     width: 420px;
     align-self: center;
 }
 
 .featured-posts__about {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
+    font: 14px/25px 'Oxygen', serif;
     color: rgba(255, 255, 255, 0.7);
     padding: 6px 0 12px 0;
     width: 420px;
@@ -243,11 +220,7 @@ a {
 }
 
 .featured-posts__author-name {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
+    font: 12px/35px 'Oxygen', serif;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -258,25 +231,21 @@ a {
 }
 
 .featured-posts__date {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
+    font: 12px/35px 'Oxygen', serif;
     color: rgba(255, 255, 255, 0.7);
-    margin-left: auto;
 }
 
 .most-recent__title {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font: 20px/27px 'Oxygen', serif;
     text-align: center;
     letter-spacing: 2px;
-    padding: 60px 0 33px 0;
+    padding: 60px 0 16px 0;
     color: #2E2E2E;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #DEDEDE;
+    width: 188px;
+    margin: 0 auto;
 }
 
 .most-recent__item {
@@ -289,36 +258,29 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     gap: 24px;
-    padding: 0 0 108px 0;
+    padding: 22px 0 108px 0;
 }
 
 .most-recent__name {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font: 16px/21px 'Lora', serif;
     color: #101315;
     padding: 14px 0 7px 13px;
 }
 
 .most-recent__about {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
+    font: 13px/19px 'Oxygen', serif;
     color: #7A7A7A;
     padding: 0 36px 13px 13px;
 }
 
-.most-recent__post-data {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 35px;
+.most-recent__date {
+    font: 12px/35px 'Oxygen', serif;
     color: #999999;
+}
+
+.most-recent__author {
+    display: flex;
+    align-items: center;
 }
 
 .most-recent__post-info {
@@ -330,16 +292,12 @@ a {
     height: 48px;
     border-width: 1px 0 0 0;
     border-style: solid;
-    border-color: #EFEFEF;
-    ;
+    border-color: #EFEFEF;    ;
+    justify-content: space-between;
 }
 
 .most-recent__author-name {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 35px;
+    font: 11px/35px 'Oxygen', serif;
     color: #999999;
     margin-right: auto;
     padding: 0 0 0 10px;
@@ -356,11 +314,7 @@ a {
 }
 
 .footer__logo {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 26px;
+    font: 26px/26px 'Lora', serif;
     color: #FFFFFF;
 }
 
@@ -372,16 +326,20 @@ a {
 
 .footer__form {
     display: flex;
+    padding: 20px 0 0 0;
 }
 
 .footer__title {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
+    font: 25px/30px 'Oxygen', serif;
+    text-align: center;
     color: #EFEFEF;
-    padding: 82px 0 38px 0;
+    padding: 82px 0 18px 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #DEDEDE;
+    display: block;
+    width: 180px;
+    margin: 0 auto;
 }
 
 .footer__button {
@@ -389,7 +347,7 @@ a {
     border-radius: 0px 3px 3px 0px;
     width: 125px;
     height: 50px;
-    margin: 0 0 90px 0;
+    margin: 0px 0 90px 0;
 }
 
 .footer__input {
@@ -400,20 +358,12 @@ a {
 }
 
 .footer__input::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font: 12px/14px 'Roboto', serif;
     color: #817F83;
 }
 
 .footer__link {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 26px;
+    font: 11px/26px 'Oxygen', serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
@@ -440,7 +390,7 @@ a {
 }
 
 .footer {
-    background-image: url('assets/footer.png');
+    background-image: url('/web/Static/assets/footer.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -463,11 +413,7 @@ a {
     padding: 140px 0 135px 0;
     width: 960px;
     margin: 0 auto;
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
+    font: 24px/35px 'Oxygen', serif;
     color: #101315;
 }
 
