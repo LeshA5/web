@@ -4,11 +4,11 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web-labs</title>
+    <title>{{.Title}}</title>
 </head>
 
 <body>
@@ -48,32 +48,32 @@
                     <div class="featured-posts__title">Featured Posts</div>
                     <div class="featured-posts__items">
                         <div class="featured-posts__item featured-posts__item_first">
-                            <div class="featured-posts__name">The Road Ahead</div>
-                            <div class="featured-posts__about">The road ahead might be paved - it might not be.</div>
+                            <div class="featured-posts__name">{{(index .FeaturedPosts 0).Title}}</div>
+                            <div class="featured-posts__about">{{(index .FeaturedPosts 0).Subtitle}}</div>
                             <div class="featured-posts__post-info">
                                 <div class="featured-posts__author">
                                     <div class="featured-posts__author-logo">
-                                        <img src="../static/assets/MatVogels.svg" alt="">
+                                        <img src={{ (index .FeaturedPosts 0).AuthorImg }} alt="">
                                     </div>
-                                    <div class="featured-posts__author-name">Mat Vogels</div>
+                                    <div class="featured-posts__author-name">{{(index .FeaturedPosts 0).Author}}</div>
                                 </div>
-                                <div class="featured-posts__date">September 25, 2015</div>
+                                <div class="featured-posts__date">{{(index .FeaturedPosts 0).PublishDate}}</div>
                             </div>
                         </div>
                         <div class="featured-posts__item featured-posts__item_second">
                             <div class="feature-posts__button-block">
                                 <button class="feature-posts__button">Adventure</button>
                             </div>
-                            <div class="featured-posts__name">From Top Down</div>
-                            <div class="featured-posts__about">Once a year, go someplace you’ve never been before.</div>
+                            <div class="featured-posts__name">{{(index .FeaturedPosts 1).Title}}</div>
+                            <div class="featured-posts__about">{{(index .FeaturedPosts 1).Subtitle}}</div>
                             <div class="featured-posts__post-info">
                                 <div class="featured-posts__author">
                                     <div class="featured-posts__author-logo">
-                                        <img src="../static/assets/WilliamWong.svg" alt="">
+                                        <img src= {{ (index .FeaturedPosts 1).AuthorImg }} alt="">
                                     </div>
-                                    <div class="featured-posts__author-name">William Wong</div>
+                                    <div class="featured-posts__author-name">{{(index .FeaturedPosts 1).Author}}</div>
                                 </div>
-                                <div class="featured-posts__date">September 25, 2015</div>
+                                <div class="featured-posts__date">{{(index .FeaturedPosts 1).PublishDate}}</div>
                             </div>
                         </div>
                     </div>
@@ -81,106 +81,24 @@
                 <section class="content__most-recent most-recent">
                     <div class="most-recent__title">Most Recent</div>
                     <div class="most-recent__items">
+                        {{ range .MostRecent }}
                         <div class="most-recent__item">
                             <div class="most-recent__image">
-                                <img src="../static/assets/balloons.jpg" alt="">
+                                <img src= {{  .ImgModifier }} >
                             </div>
-                            <div class="most-recent__name">Still Standing Tall</div>
-                            <div class="most-recent__about">Life begins at the end of your comfort zone.</div>
+                            <div class="most-recent__name">{{ .Title }}</div>
+                            <div class="most-recent__about">{{ .Subtitle }}</div>
                             <div class="most-recent__post-info">
                                 <div class="most-recent__author">
                                     <div class="most-recent__author-logo">
-                                        <img src="../static/assets/WilliamWong.svg" alt="">
+                                        <img src= {{ .AuthorImg }} alt="">
                                     </div>
-                                    <div class="most-recent__author-name">William Wong</div>
+                                    <div class="most-recent__author-name"> {{ .Author }}</div>
                                 </div>
-                                <div class="most-recent__date">9/25/2015</div>
+                                <div class="most-recent__date"> {{ .PublishDate }}</div>
                             </div>
-                        </div>
-                        <div class="most-recent__item">
-                            <div class="most-recent__image">
-                                <img src="../static/assets/bridge.png" alt="">
-                            </div>
-                            <div class="most-recent__name">Sunny Side Up</div>
-                            <div class="most-recent__about">No place is ever as bad as they tell you it’s going to be.
-                            </div>
-                            <div class="most-recent__post-info">
-                                <div class="most-recent__author">
-                                    <div class="most-recent__author-logo">
-                                        <img src="../static/assets/MatVogels.svg" alt="">
-                                    </div>
-                                    <div class="most-recent__author-name">Mat Vogels</div>
-                                </div>
-                                <div class="most-recent__date">9/25/2015</div>
-                            </div>
-                        </div>
-                        <div class="most-recent__item">
-                            <div class="most-recent__image">
-                                <img src="../static/assets/lake.png" alt="">
-                            </div>
-                            <div class="most-recent__name">Water Falls</div>
-                            <div class="most-recent__about">We travel not to escape life, but for life not to escape us.
-                            </div>
-                            <div class="most-recent__post-info">
-                                <div class="most-recent__author">
-                                    <div class="most-recent__author-logo">
-                                        <img src="../static/assets/MatVogels.svg" alt="">
-                                    </div>
-                                    <div class="most-recent__author-name">Mat Vogels</div>
-                                </div>
-                                <div class="most-recent__date">9/25/2015</div>
-                            </div>
-                        </div>
-                        <div class="most-recent__item">
-                            <div class="most-recent__image">
-                                <img src="../static/assets/water.png" alt="">
-                            </div>
-                            <div class="most-recent__name">Through the Mist</div>
-                            <div class="most-recent__about">Travel makes you see what a tiny place you occupy in the
-                                world.</div>
-                            <div class="most-recent__post-info">
-                                <div class="most-recent__author">
-                                    <div class="most-recent__author-logo">
-                                        <img src="../static/assets/WilliamWong.svg" alt="">
-                                    </div>
-                                    <div class="most-recent__author-name">William Wong</div>
-                                </div>
-                                <div class="most-recent__date">9/25/2015</div>
-                            </div>
-                        </div>
-                        <div class="most-recent__item">
-                            <div class="most-recent__image">
-                                <img src="../static/assets/lift.png" alt="">
-                            </div>
-                            <div class="most-recent__name">Awaken Early</div>
-                            <div class="most-recent__about">Not all those who wander are lost.</div>
-                            <div class="most-recent__post-info">
-                                <div class="most-recent__author">
-                                    <div class="most-recent__author-logo">
-                                        <img src="../static/assets/MatVogels.svg" alt="">
-                                    </div>
-                                    <div class="most-recent__author-name">Mat Vogels</div>
-                                </div>
-                                <div class="most-recent__date">9/25/2015</div>
-                            </div>
-                        </div>
-                        <div class="most-recent__item">
-                            <div class="most-recent__image">
-                                <img src="../static/assets/waterfall.png" alt="">
-                            </div>
-                            <div class="most-recent__name">Try it Always</div>
-                            <div class="most-recent__about">The world is a book, and those who do not travel read only
-                                one page.</div>
-                            <div class="most-recent__post-info">
-                                <div class="most-recent__author">
-                                    <div class="most-recent__author-logo">
-                                        <img src="../static/assets/MatVogels.svg" alt="">
-                                    </div>
-                                    <div class="most-recent__author-name">Mat Vogels</div>
-                                </div>
-                                <div class="most-recent__date">9/25/2015</div>
-                            </div>
-                        </div>
+                        </div>   
+                        {{end}}            
                     </div>
                 </section>
             </section>

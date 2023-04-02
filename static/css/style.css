@@ -40,7 +40,7 @@ a {
 }
 
 .header {
-    background-image: url('/web/Static/assets/canyon.jpg');
+    background-image: url('../assets/canyon.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -151,7 +151,7 @@ a {
 }
 
 .featured-posts__item_first {
-    background-image: url('/web/Static/assets/radiance.png');
+    background-image: url('../assets/radiance.png');
     background-repeat: no-repeat;
     background-size: 100%;
     justify-content: flex-end;
@@ -167,7 +167,7 @@ a {
 }
 
 .featured-posts__item_second {
-    background-image: url('/web/Static/assets/chinese-lantern.png');
+    background-image: url('../assets/chinese-lantern.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -390,7 +390,7 @@ a {
 }
 
 .footer {
-    background-image: url('/web/Static/assets/footer.png');
+    background-image: url('../assets/footer.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
