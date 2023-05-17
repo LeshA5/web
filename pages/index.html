@@ -48,7 +48,7 @@
                     <div class="featured-posts__title">Featured Posts</div>
                     <div class="featured-posts__items">
                         <div class="featured-posts__item featured-posts__item_first">
-                            <div class="featured-posts__name">{{(index .FeaturedPosts 0).Title}}</div>
+                            <a class="featured-posts__name" href="/post/{{(index .FeaturedPosts 0).PostID }}">{{(index .FeaturedPosts 0).Title}}</a>
                             <div class="featured-posts__about">{{(index .FeaturedPosts 0).Subtitle}}</div>
                             <div class="featured-posts__post-info">
                                 <div class="featured-posts__author">
@@ -64,7 +64,7 @@
                             <div class="feature-posts__button-block">
                                 <button class="feature-posts__button">Adventure</button>
                             </div>
-                            <div class="featured-posts__name">{{(index .FeaturedPosts 1).Title}}</div>
+                            <a class="featured-posts__name" href="/post/{{(index .FeaturedPosts 1).PostID }}">{{(index .FeaturedPosts 1).Title}}</a>
                             <div class="featured-posts__about">{{(index .FeaturedPosts 1).Subtitle}}</div>
                             <div class="featured-posts__post-info">
                                 <div class="featured-posts__author">
@@ -75,7 +75,6 @@
                                 </div>
                                 <div class="featured-posts__date">{{(index .FeaturedPosts 1).PublishDate}}</div>
                             </div>
-                        </div>
                     </div>
                 </section>
                 <section class="content__most-recent most-recent">
@@ -86,7 +85,7 @@
                             <div class="most-recent__image">
                                 <img src= {{  .ImgModifier }} >
                             </div>
-                            <div class="most-recent__name">{{ .Title }}</div>
+                            <a class="most-recent__name" href="/post/{{ .PostID }}">{{ .Title }}</a>
                             <div class="most-recent__about">{{ .Subtitle }}</div>
                             <div class="most-recent__post-info">
                                 <div class="most-recent__author">

@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,17 +28,17 @@
         </header>
         <main class="main">
             <article class="main__article article">
-                <div class="article__title title"> {{ .Article.Title}} </div>
-                <div class="article__subtitle subtitle"> {{ .Article.Subtitle }}</div>
+                <div class="article__title title"> {{ .Title}} </div>
+                <div class="article__subtitle subtitle"> {{ .Subtitle }}</div>
                 <div class="article__image">
-                    <img src={{.Article.ImgModifier}} alt="" class="article__image">
+                    <img src={{.ImgModifier}} alt="" class="article__image">
                 </div>
                 <div class="article__text">
-                    {{ range .Article.Text }}
+                    
                     <p class="article__paragraph">
-                        {{.}}
+                        {{.Content}}
                     </p>
-                    {{end}}  
+                     
                 </div>
             </article>
         </main>
